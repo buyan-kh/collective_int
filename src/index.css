@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .mystical-gradient {
+    @apply bg-gradient-to-br from-primary-600 via-mystical-600 to-earth-600;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20 rounded-xl;
+  }
+  
+  .dream-card {
+    @apply glass-effect p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105;
+  }
+  
+  .archetype-glow {
+    @apply shadow-lg shadow-mystical-500/25 hover:shadow-mystical-500/50 transition-shadow duration-300;
+  }
+}
